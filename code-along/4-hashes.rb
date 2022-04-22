@@ -4,6 +4,17 @@
 
 # Hashes are lists of *key-value pairs*
 
+me={
+    "name" => "Brian", 
+    "location" => {"city" => "Chicago","state" => "Illinois"},
+    "status" => "Teaching at Kellog"}
+puts me
+
+me["name"] = {"first_name" => "Brian", "last_name" =>"Eng"}
+
 # Accessing data from the hash
+puts me ["name"] ["first_name"]
+puts me ["location"] ["city"]
+
 
 # More Complex Hashes
