@@ -43,10 +43,18 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # n_ranks=n_ranks+1    
 # end
 
-
+deck=[]
 
 for rank in ranks
     for suit in suits
-        puts "#{rank} of #{suit}"
+        card= "#{rank} of #{suit}"
+        deck.push(card)
     end
+end
+
+shuffled_deck=deck.shuffle
+hands=shuffled_deck[0,5]
+
+for hand in hands
+    puts hand
 end
