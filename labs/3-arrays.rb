@@ -21,9 +21,9 @@ friend_list=["beers", "cookies", "apples"]
 shared_list=my_list + friend_list
 sorted_list=shared_list.sort
 unique_sorted_list =sorted_list.uniq
-puts unique_sorted_list
+# puts unique_sorted_list
 
-#puts (my_list + friend_list).sort.uniq
+puts (my_list + friend_list).sort.uniq
 puts "buy #{unique_sorted_list[0]}"
 puts "buy #{unique_sorted_list[1]}"
 puts "buy #{unique_sorted_list[2]}"

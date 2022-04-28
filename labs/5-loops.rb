@@ -22,29 +22,31 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
 
 
-index_ranks=0
-index_suits=0
-n_ranks=0
-n_suits=0
+# n_ranks=0
+# n_suits=0
+    
+# loop do
+# side_1=ranks[n_ranks]
+# if n_ranks==ranks.count
+#     break
+# end
+#     loop do
+#         side_2=suits[n_suits]
+#         output="#{side_1} of #{side_2}"
+#         puts output
+#         n_suits=n_suits+1                    
+#         if n_suits==suits.count
+#             break
+#         end
+#     end
+# n_suits=0
+# n_ranks=n_ranks+1    
+# end
 
 
 
-loop do
-    if index_ranks==ranks.count 
-        break
+for rank in ranks
+    for suit in suits
+        puts "#{rank} of #{suit}"
     end
-    loop do
-        if index_suits==suits.count
-            break
-        end
-
-    side_1=ranks[n_ranks]
-    side_2=suits[n_suits]
-    output="#{side_1} of #{side_2}"
-    puts output
-    n_suits=n_suits+1
-    index_suits=index_suits+1
-    end
-n_ranks=n_ranks+1
-index_ranks=index_ranks+1
 end
